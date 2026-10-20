@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="QADemo Test Suite">
+
+    <test name="QADemo Tests">
+        <classes>
+            <class name="ecom.BITM.QADemo.SignUp.SignUpTest"/>
+            <class name="ecom.BITM.QADemo.SignIn.LoginTest"/>
+            <class name="ecom.BITM.QADemo.Product.ProductTest"/>
+            <class name="ecom.BITM.QADemo.ShoppingCart.CartTest"/>
+            <class name="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+            <class name="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        </classes>
+    </test>
+
+</suite>

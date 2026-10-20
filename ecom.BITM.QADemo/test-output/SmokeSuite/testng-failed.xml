@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SmokeTesting(failed)">
+    <groups>
+      <run>
+        <include name="YT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ecom.BITM.QADemo.Product.ProductTest">
+        <methods>
+          <include name="verifyAddToCartAndOpenCart"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ecom.BITM.QADemo.Product.ProductTest -->
+      <class name="ecom.BITM.QADemo.ShoppingCart.CartTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyProductRemovedFromCart"/>
+        </methods>
+      </class> <!-- ecom.BITM.QADemo.ShoppingCart.CartTest -->
+    </classes>
+  </test> <!-- SmokeTesting(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->

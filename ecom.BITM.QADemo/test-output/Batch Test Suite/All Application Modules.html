@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  All Application Modules</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All Application Modules</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 17 02:41:27 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>204 seconds (204025 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecom.BITM.QADemo.ShoppingCart.CartTest.verifyProductAddedToCart()'><b>verifyProductAddedToCart</b><br>Test class: ecom.BITM.QADemo.ShoppingCart.CartTest</td>
+<td></td>
+<td>1</td>
+<td>ecom.BITM.QADemo.ShoppingCart.CartTest@2a5c8d3f</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignUp.SignUpTest.invalidEmailSignUpTest()'><b>invalidEmailSignUpTest</b><br>Test class: ecom.BITM.QADemo.SignUp.SignUpTest</td>
+<td></td>
+<td>5</td>
+<td>ecom.BITM.QADemo.SignUp.SignUpTest@24aed80c</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Checkout.CheckoutTest.blankShippingAddressTest()'><b>blankShippingAddressTest</b><br>Test class: ecom.BITM.QADemo.Checkout.CheckoutTest</td>
+<td></td>
+<td>3</td>
+<td>ecom.BITM.QADemo.Checkout.CheckoutTest@752325ad</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignUp.SignUpTest.validSignUpTest()'><b>validSignUpTest</b><br>Test class: ecom.BITM.QADemo.SignUp.SignUpTest</td>
+<td></td>
+<td>6</td>
+<td>ecom.BITM.QADemo.SignUp.SignUpTest@24aed80c</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignUp.SignUpTest.blankPhoneSignUpTest()'><b>blankPhoneSignUpTest</b><br>Test class: ecom.BITM.QADemo.SignUp.SignUpTest</td>
+<td></td>
+<td>4</td>
+<td>ecom.BITM.QADemo.SignUp.SignUpTest@24aed80c</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Checkout.CheckoutTest.validCheckoutTest()'><b>validCheckoutTest</b><br>Test class: ecom.BITM.QADemo.Checkout.CheckoutTest</td>
+<td></td>
+<td>3</td>
+<td>ecom.BITM.QADemo.Checkout.CheckoutTest@752325ad</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Product.ProductTest.verifyInvalidProductSearch()'><b>verifyInvalidProductSearch</b><br>Test class: ecom.BITM.QADemo.Product.ProductTest</td>
+<td></td>
+<td>21</td>
+<td>ecom.BITM.QADemo.Product.ProductTest@3a52dba3</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignIn.LoginTest.blankLoginTest()'><b>blankLoginTest</b><br>Test class: ecom.BITM.QADemo.SignIn.LoginTest</td>
+<td></td>
+<td>6</td>
+<td>ecom.BITM.QADemo.SignIn.LoginTest@7dcf94f8</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignIn.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: ecom.BITM.QADemo.SignIn.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>ecom.BITM.QADemo.SignIn.LoginTest@7dcf94f8</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.OrderManagement.MyOrdersTest.verifyValidOrderIsDisplayed()'><b>verifyValidOrderIsDisplayed</b><br>Test class: ecom.BITM.QADemo.OrderManagement.MyOrdersTest</td>
+<td></td>
+<td>3</td>
+<td>ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Checkout.CheckoutTest.blankNameTest()'><b>blankNameTest</b><br>Test class: ecom.BITM.QADemo.Checkout.CheckoutTest</td>
+<td></td>
+<td>3</td>
+<td>ecom.BITM.QADemo.Checkout.CheckoutTest@752325ad</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.OrderManagement.MyOrdersTest.verifyMyOrdersPageOpens()'><b>verifyMyOrdersPageOpens</b><br>Test class: ecom.BITM.QADemo.OrderManagement.MyOrdersTest</td>
+<td></td>
+<td>2</td>
+<td>ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Product.ProductTest.verifyProductIsDisplayed()'><b>verifyProductIsDisplayed</b><br>Test class: ecom.BITM.QADemo.Product.ProductTest</td>
+<td></td>
+<td>1</td>
+<td>ecom.BITM.QADemo.Product.ProductTest@3a52dba3</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.OrderManagement.MyOrdersTest.verifyInvalidOrderIsNotDisplayed()'><b>verifyInvalidOrderIsNotDisplayed</b><br>Test class: ecom.BITM.QADemo.OrderManagement.MyOrdersTest</td>
+<td></td>
+<td>12</td>
+<td>ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignIn.LoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: ecom.BITM.QADemo.SignIn.LoginTest</td>
+<td></td>
+<td>5</td>
+<td>ecom.BITM.QADemo.SignIn.LoginTest@7dcf94f8</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.ShoppingCart.CartTest.verifyProductRemovedFromCart()'><b>verifyProductRemovedFromCart</b><br>Test class: ecom.BITM.QADemo.ShoppingCart.CartTest</td>
+<td></td>
+<td>1</td>
+<td>ecom.BITM.QADemo.ShoppingCart.CartTest@2a5c8d3f</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Product.ProductTest.verifyAddToCartAndOpenCart()'><b>verifyAddToCartAndOpenCart</b><br>Test class: ecom.BITM.QADemo.Product.ProductTest</td>
+<td></td>
+<td>2</td>
+<td>ecom.BITM.QADemo.Product.ProductTest@3a52dba3</td></tr>
+</table><p>
+</body>
+</html>

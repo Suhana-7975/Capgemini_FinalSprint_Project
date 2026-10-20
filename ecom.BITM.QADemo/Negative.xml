@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Negative Test Suite">
+
+    <test name="Negative Tests - Login SignUp Checkout">
+
+        <classes>
+
+            
+
+            <class name="ecom.BITM.QADemo.SignUp.SignUpTest">
+                <methods>
+                    <include name="invalidEmailSignUpTest"/>
+                </methods>
+            </class> 
+            
+            <class name="ecom.BITM.QADemo.SignIn.LoginTest">
+                <methods>
+                    <include name="blankLoginTest"/>
+                </methods>
+            </class>
+
+            <class name="ecom.BITM.QADemo.Checkout.CheckoutTest">
+                <methods>
+                    <include name="blankShippingAddressTest"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+
+</suite>

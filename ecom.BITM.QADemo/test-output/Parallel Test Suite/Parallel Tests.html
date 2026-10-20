@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>TestNG:  Parallel Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Parallel Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 19 20:50:55 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>167 seconds (167276 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecom.BITM.QADemo.Checkout.CheckoutTest.blankShippingAddressTest()'><b>blankShippingAddressTest</b><br>Test class: ecom.BITM.QADemo.Checkout.CheckoutTest<br/>
+<a href="#Output-678317902" onClick='toggleBox("Output-678317902", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-678317902" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-678317902">
+Blank shipping address correctly triggered validation<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>ecom.BITM.QADemo.Checkout.CheckoutTest@2925bf5b</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Product.ProductTest.verifyProductIsDisplayed()'><b>verifyProductIsDisplayed</b><br>Test class: ecom.BITM.QADemo.Product.ProductTest<br/>
+<a href="#Output-1000512706" onClick='toggleBox("Output-1000512706", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1000512706" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1000512706">
+Product displayed successfully: Webcam<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ecom.BITM.QADemo.Product.ProductTest@b3ca52e</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Checkout.CheckoutTest.validCheckoutTest()'><b>validCheckoutTest</b><br>Test class: ecom.BITM.QADemo.Checkout.CheckoutTest<br/>
+<a href="#Output-1529760553" onClick='toggleBox("Output-1529760553", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1529760553" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1529760553">
+Valid checkout completed and order confirmation displayed<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>ecom.BITM.QADemo.Checkout.CheckoutTest@2925bf5b</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignUp.SignUpTest.validSignUpTest()'><b>validSignUpTest</b><br>Test class: ecom.BITM.QADemo.SignUp.SignUpTest<br/>
+<a href="#Output-1131226981" onClick='toggleBox("Output-1131226981", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1131226981" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1131226981">
+Valid signup form submitted<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecom.BITM.QADemo.SignUp.SignUpTest@6743e411</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignIn.LoginTest.blankLoginTest()'><b>blankLoginTest</b><br>Test class: ecom.BITM.QADemo.SignIn.LoginTest<br/>
+<a href="#Output-1989370746" onClick='toggleBox("Output-1989370746", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1989370746" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1989370746">
+Blank login test passed: login was rejected<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>ecom.BITM.QADemo.SignIn.LoginTest@279fedbd</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.OrderManagement.MyOrdersTest.verifyValidOrderIsDisplayed()'><b>verifyValidOrderIsDisplayed</b><br>Test class: ecom.BITM.QADemo.OrderManagement.MyOrdersTest<br/>
+<a href="#Output-999797214" onClick='toggleBox("Output-999797214", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-999797214" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-999797214">
+Valid order is displayed: 2453<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>ecom.BITM.QADemo.OrderManagement.MyOrdersTest@710f4dc7</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.ShoppingCart.CartTest.verifyProductAddedToCart()'><b>verifyProductAddedToCart</b><br>Test class: ecom.BITM.QADemo.ShoppingCart.CartTest<br/>
+<a href="#Output-241168818" onClick='toggleBox("Output-241168818", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-241168818" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-241168818">
+Product added to cart successfully: Webcam<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>ecom.BITM.QADemo.ShoppingCart.CartTest@45c7e403</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignUp.SignUpTest.invalidEmailSignUpTest()'><b>invalidEmailSignUpTest</b><br>Test class: ecom.BITM.QADemo.SignUp.SignUpTest<br/>
+<a href="#Output-1871791937" onClick='toggleBox("Output-1871791937", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1871791937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1871791937">
+Invalid email signup scenario executed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.BITM.QADemo.SignUp.SignUpTest@6743e411</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignIn.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: ecom.BITM.QADemo.SignIn.LoginTest<br/>
+<a href="#Output-786580370" onClick='toggleBox("Output-786580370", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-786580370" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-786580370">
+Valid login successful<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.BITM.QADemo.SignIn.LoginTest@279fedbd</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.ShoppingCart.CartTest.verifyProductRemovedFromCart()'><b>verifyProductRemovedFromCart</b><br>Test class: ecom.BITM.QADemo.ShoppingCart.CartTest<br/>
+<a href="#Output-1699515804" onClick='toggleBox("Output-1699515804", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699515804" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699515804">
+Product removed from cart successfully: Webcam<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>ecom.BITM.QADemo.ShoppingCart.CartTest@45c7e403</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Checkout.CheckoutTest.blankNameTest()'><b>blankNameTest</b><br>Test class: ecom.BITM.QADemo.Checkout.CheckoutTest<br/>
+<a href="#Output-566847577" onClick='toggleBox("Output-566847577", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-566847577" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-566847577">
+Blank name test passed: order confirmation was not displayed<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>ecom.BITM.QADemo.Checkout.CheckoutTest@2925bf5b</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.OrderManagement.MyOrdersTest.verifyInvalidOrderIsNotDisplayed()'><b>verifyInvalidOrderIsNotDisplayed</b><br>Test class: ecom.BITM.QADemo.OrderManagement.MyOrdersTest<br/>
+<a href="#Output-865158244" onClick='toggleBox("Output-865158244", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-865158244" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-865158244">
+Invalid order correctly not displayed: INVALID001<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>ecom.BITM.QADemo.OrderManagement.MyOrdersTest@710f4dc7</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.OrderManagement.MyOrdersTest.verifyMyOrdersPageOpens()'><b>verifyMyOrdersPageOpens</b><br>Test class: ecom.BITM.QADemo.OrderManagement.MyOrdersTest<br/>
+<a href="#Output-1186290914" onClick='toggleBox("Output-1186290914", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1186290914" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1186290914">
+My Orders page opened successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.BITM.QADemo.OrderManagement.MyOrdersTest@710f4dc7</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignIn.LoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: ecom.BITM.QADemo.SignIn.LoginTest<br/>
+<a href="#Output-563462189" onClick='toggleBox("Output-563462189", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-563462189" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-563462189">
+Invalid login test passed: login was rejected<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>ecom.BITM.QADemo.SignIn.LoginTest@279fedbd</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.SignUp.SignUpTest.blankPhoneSignUpTest()'><b>blankPhoneSignUpTest</b><br>Test class: ecom.BITM.QADemo.SignUp.SignUpTest<br/>
+<a href="#Output-1716232371" onClick='toggleBox("Output-1716232371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1716232371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1716232371">
+Blank phone signup scenario executed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.BITM.QADemo.SignUp.SignUpTest@6743e411</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Product.ProductTest.verifyInvalidProductSearch()'><b>verifyInvalidProductSearch</b><br>Test class: ecom.BITM.QADemo.Product.ProductTest<br/>
+<a href="#Output-1940688694" onClick='toggleBox("Output-1940688694", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1940688694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1940688694">
+Invalid product correctly not displayed: InvalidProduct<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>ecom.BITM.QADemo.Product.ProductTest@b3ca52e</td></tr>
+<tr>
+<td title='ecom.BITM.QADemo.Product.ProductTest.verifyAddToCartAndOpenCart()'><b>verifyAddToCartAndOpenCart</b><br>Test class: ecom.BITM.QADemo.Product.ProductTest<br/>
+<a href="#Output-1158703181" onClick='toggleBox("Output-1158703181", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1158703181" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1158703181">
+Product added to cart successfully: Webcam<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>ecom.BITM.QADemo.Product.ProductTest@b3ca52e</td></tr>
+</table><p>
+</body>
+</html>

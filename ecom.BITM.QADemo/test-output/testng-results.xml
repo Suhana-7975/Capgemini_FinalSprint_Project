@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="11" total="17" passed="6" failed="0" skipped="0">
+<testng-results ignored="52" total="77" passed="25" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Valid login successful]]>
+    </line>
+    <line>
+      <![CDATA[Product displayed successfully: Webcam]]>
+    </line>
+    <line>
+      <![CDATA[Product added to cart successfully: Webcam]]>
+    </line>
+    <line>
+      <![CDATA[Product added to cart successfully: Webcam]]>
+    </line>
+    <line>
+      <![CDATA[Valid checkout completed and order confirmation displayed]]>
+    </line>
+    <line>
+      <![CDATA[My Orders page opened successfully]]>
+    </line>
+    <line>
+      <![CDATA[Valid order is displayed: 2453]]>
+    </line>
+    <line>
+      <![CDATA[Valid login successful]]>
+    </line>
+    <line>
+      <![CDATA[Product displayed successfully: Webcam]]>
+    </line>
+    <line>
+      <![CDATA[Valid checkout completed and order confirmation displayed]]>
+    </line>
+    <line>
+      <![CDATA[Valid order is displayed: 2453]]>
+    </line>
     <line>
       <![CDATA[Valid login successful]]>
     </line>
@@ -19,39 +52,61 @@
     <line>
       <![CDATA[Valid order is displayed: 2453]]>
     </line>
+    <line>
+      <![CDATA[Invalid email signup scenario executed]]>
+    </line>
+    <line>
+      <![CDATA[Blank login test passed: login was rejected]]>
+    </line>
+    <line>
+      <![CDATA[Blank shipping address correctly triggered validation]]>
+    </line>
+    <line>
+      <![CDATA[Valid login successful]]>
+    </line>
+    <line>
+      <![CDATA[Product added to cart successfully: Webcam]]>
+    </line>
+    <line>
+      <![CDATA[Product added to cart successfully: Webcam]]>
+    </line>
+    <line>
+      <![CDATA[Valid checkout completed and order confirmation displayed]]>
+    </line>
+    <line>
+      <![CDATA[Valid order is displayed: 2453]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-10-20T20:18:22 IST" name="SmokeSuite" finished-at="2026-10-20T20:20:27 IST" duration-ms="124744">
+  <suite started-at="2026-10-23T15:51:32 IST" name="IntegrationSuite" finished-at="2026-10-23T15:53:26 IST" duration-ms="114245">
     <groups>
       <group name="ST">
-        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
-        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@6a03bcb1]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@175b9425]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@21b2e768]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
       </group> <!-- ST -->
-      <group name="NT">
-        <method signature="LoginTest.invalidLoginTest()[pri:2, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" name="invalidLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
-      </group> <!-- NT -->
-      <group name="IT">
-        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
-        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
-        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@3a52dba3]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
-      </group> <!-- IT -->
       <group name="YT">
-        <method signature="MyOrdersTest.verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" name="verifyMyOrdersPageOpens" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
-        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
-        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
-        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@3a52dba3]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
-        <method signature="CartTest.verifyProductRemovedFromCart()[pri:2, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@2a5c8d3f]" name="verifyProductRemovedFromCart" class="ecom.BITM.QADemo.ShoppingCart.CartTest"/>
-        <method signature="LoginTest.invalidLoginTest()[pri:2, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" name="invalidLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@175b9425]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@21b2e768]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@3098cf3b]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
       </group> <!-- YT -->
+      <group name="IT">
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@6a03bcb1]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="CartTest.verifyProductAddedToCart()[pri:1, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@610f7aa]" name="verifyProductAddedToCart" class="ecom.BITM.QADemo.ShoppingCart.CartTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@175b9425]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@21b2e768]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@3098cf3b]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
+      </group> <!-- IT -->
       <group name="FT">
-        <method signature="MyOrdersTest.verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" name="verifyMyOrdersPageOpens" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
-        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
-        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
-        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@3a52dba3]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@6a03bcb1]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="CartTest.verifyProductAddedToCart()[pri:1, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@610f7aa]" name="verifyProductAddedToCart" class="ecom.BITM.QADemo.ShoppingCart.CartTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@175b9425]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@21b2e768]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@3098cf3b]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
       </group> <!-- FT -->
     </groups>
-    <test started-at="2026-10-20T20:18:22 IST" name="SmokeTesting" finished-at="2026-10-20T20:20:27 IST" duration-ms="124744">
+    <test started-at="2026-10-23T15:51:32 IST" name="IntegrationTesting" finished-at="2026-10-23T15:53:26 IST" duration-ms="114245">
       <class name="ecom.BITM.QADemo.Product.ProductTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@3a52dba3]" started-at="2026-10-20T20:18:48 IST" name="setUp" finished-at="2026-10-20T20:18:50 IST" duration-ms="1945" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@3098cf3b]" started-at="2026-10-23T15:51:40 IST" name="setUp" finished-at="2026-10-23T15:51:41 IST" duration-ms="1234" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,20 +117,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@3a52dba3]" started-at="2026-10-20T20:18:50 IST" name="verifyAddToCartAndOpenCart" finished-at="2026-10-20T20:19:16 IST" duration-ms="25500" status="PASS">
+        <test-method signature="verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@3098cf3b]" started-at="2026-10-23T15:51:41 IST" name="verifyAddToCartAndOpenCart" finished-at="2026-10-23T15:52:04 IST" duration-ms="23528" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Product added to cart successfully: Webcam]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyAddToCartAndOpenCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@3a52dba3]" started-at="2026-10-20T20:19:16 IST" name="tearDown" finished-at="2026-10-20T20:19:21 IST" duration-ms="5279" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@3098cf3b]" started-at="2026-10-23T15:52:04 IST" name="tearDown" finished-at="2026-10-23T15:52:10 IST" duration-ms="5223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- ecom.BITM.QADemo.Product.ProductTest -->
       <class name="ecom.BITM.QADemo.ShoppingCart.CartTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@2a5c8d3f]" started-at="2026-10-20T20:19:21 IST" name="setUp" finished-at="2026-10-20T20:19:23 IST" duration-ms="2437" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@610f7aa]" started-at="2026-10-23T15:52:10 IST" name="setUp" finished-at="2026-10-23T15:52:11 IST" duration-ms="956" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,20 +141,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductRemovedFromCart()[pri:2, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@2a5c8d3f]" started-at="2026-10-20T20:19:23 IST" name="verifyProductRemovedFromCart" finished-at="2026-10-20T20:19:59 IST" duration-ms="35916" status="PASS">
+        <test-method signature="verifyProductAddedToCart()[pri:1, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@610f7aa]" started-at="2026-10-23T15:52:11 IST" name="verifyProductAddedToCart" finished-at="2026-10-23T15:52:34 IST" duration-ms="23819" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Product removed from cart successfully: Webcam]]>
+              <![CDATA[Product added to cart successfully: Webcam]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyProductRemovedFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@2a5c8d3f]" started-at="2026-10-20T20:19:59 IST" name="tearDown" finished-at="2026-10-20T20:20:05 IST" duration-ms="5283" status="PASS">
+        </test-method> <!-- verifyProductAddedToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@610f7aa]" started-at="2026-10-23T15:52:34 IST" name="tearDown" finished-at="2026-10-23T15:52:40 IST" duration-ms="5223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- ecom.BITM.QADemo.ShoppingCart.CartTest -->
       <class name="ecom.BITM.QADemo.OrderManagement.MyOrdersTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" started-at="2026-10-20T20:20:05 IST" name="setUp" finished-at="2026-10-20T20:20:06 IST" duration-ms="1749" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@21b2e768]" started-at="2026-10-23T15:53:13 IST" name="setUp" finished-at="2026-10-23T15:53:14 IST" duration-ms="1071" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,42 +165,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" started-at="2026-10-20T20:20:06 IST" name="verifyMyOrdersPageOpens" finished-at="2026-10-20T20:20:08 IST" duration-ms="1696" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[My Orders page opened successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyMyOrdersPageOpens -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" started-at="2026-10-20T20:20:08 IST" name="tearDown" finished-at="2026-10-20T20:20:13 IST" duration-ms="5217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" started-at="2026-10-20T20:20:13 IST" name="setUp" finished-at="2026-10-20T20:20:16 IST" duration-ms="2289" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" started-at="2026-10-20T20:20:16 IST" name="verifyValidOrderIsDisplayed" finished-at="2026-10-20T20:20:22 IST" duration-ms="5930" status="PASS">
+        <test-method signature="verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@21b2e768]" started-at="2026-10-23T15:53:14 IST" name="verifyValidOrderIsDisplayed" finished-at="2026-10-23T15:53:21 IST" duration-ms="6778" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid order is displayed: 2453]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyValidOrderIsDisplayed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@279fedbd]" started-at="2026-10-20T20:20:22 IST" name="tearDown" finished-at="2026-10-20T20:20:27 IST" duration-ms="5230" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@21b2e768]" started-at="2026-10-23T15:53:21 IST" name="tearDown" finished-at="2026-10-23T15:53:26 IST" duration-ms="5222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- ecom.BITM.QADemo.OrderManagement.MyOrdersTest -->
-      <class name="ecom.BITM.QADemo.SignIn.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" started-at="2026-10-20T20:18:22 IST" name="setUp" finished-at="2026-10-20T20:18:25 IST" duration-ms="3236" status="PASS">
+      <class name="ecom.BITM.QADemo.Checkout.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@6a03bcb1]" started-at="2026-10-23T15:52:40 IST" name="setUp" finished-at="2026-10-23T15:52:41 IST" duration-ms="998" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,18 +189,58 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" started-at="2026-10-20T20:18:25 IST" name="validLoginTest" finished-at="2026-10-20T20:18:29 IST" duration-ms="3187" status="PASS">
+        <test-method signature="validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@6a03bcb1]" started-at="2026-10-23T15:52:41 IST" name="validCheckoutTest" finished-at="2026-10-23T15:53:08 IST" duration-ms="27398" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid checkout completed and order confirmation displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validCheckoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@6a03bcb1]" started-at="2026-10-23T15:53:08 IST" name="tearDown" finished-at="2026-10-23T15:53:13 IST" duration-ms="5238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.Checkout.CheckoutTest -->
+      <class name="ecom.BITM.QADemo.SignIn.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@175b9425]" started-at="2026-10-23T15:51:32 IST" name="setUp" finished-at="2026-10-23T15:51:33 IST" duration-ms="1029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@175b9425]" started-at="2026-10-23T15:51:33 IST" name="validLoginTest" finished-at="2026-10-23T15:51:34 IST" duration-ms="1293" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid login successful]]>
             </line>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" started-at="2026-10-20T20:18:29 IST" name="tearDown" finished-at="2026-10-20T20:18:34 IST" duration-ms="5262" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@175b9425]" started-at="2026-10-23T15:51:34 IST" name="tearDown" finished-at="2026-10-23T15:51:40 IST" duration-ms="5227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" started-at="2026-10-20T20:18:34 IST" name="setUp" finished-at="2026-10-20T20:18:36 IST" duration-ms="2573" status="PASS">
+      </class> <!-- ecom.BITM.QADemo.SignIn.LoginTest -->
+    </test> <!-- IntegrationTesting -->
+  </suite> <!-- IntegrationSuite -->
+  <suite started-at="2026-10-23T15:53:26 IST" name="Batch Test Suite" finished-at="2026-10-23T15:53:26 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Batch Test Suite -->
+  <suite started-at="2026-10-23T15:50:36 IST" name="Negative Test Suite" finished-at="2026-10-23T15:51:32 IST" duration-ms="55992">
+    <groups>
+      <group name="NT">
+        <method signature="CheckoutTest.blankShippingAddressTest()[pri:2, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@313b2ea6]" name="blankShippingAddressTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="LoginTest.blankLoginTest()[pri:3, instance:ecom.BITM.QADemo.SignIn.LoginTest@6a2b953e]" name="blankLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+      </group> <!-- NT -->
+    </groups>
+    <test started-at="2026-10-23T15:50:36 IST" name="Negative Tests - Login SignUp Checkout" finished-at="2026-10-23T15:51:32 IST" duration-ms="55992">
+      <class name="ecom.BITM.QADemo.SignUp.SignUpTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignUp.SignUpTest@6ff29830]" started-at="2026-10-23T15:50:36 IST" name="setUp" finished-at="2026-10-23T15:50:37 IST" duration-ms="1107" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,18 +251,559 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginTest()[pri:2, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" started-at="2026-10-20T20:18:36 IST" name="invalidLoginTest" finished-at="2026-10-20T20:18:43 IST" duration-ms="6680" status="PASS">
+        <test-method signature="invalidEmailSignUpTest()[pri:0, instance:ecom.BITM.QADemo.SignUp.SignUpTest@6ff29830]" started-at="2026-10-23T15:50:37 IST" name="invalidEmailSignUpTest" finished-at="2026-10-23T15:50:42 IST" duration-ms="5008" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid email signup scenario executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidEmailSignUpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignUp.SignUpTest@6ff29830]" started-at="2026-10-23T15:50:42 IST" name="tearDown" finished-at="2026-10-23T15:50:47 IST" duration-ms="5190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.SignUp.SignUpTest -->
+      <class name="ecom.BITM.QADemo.Checkout.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@313b2ea6]" started-at="2026-10-23T15:50:59 IST" name="setUp" finished-at="2026-10-23T15:51:00 IST" duration-ms="983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="blankShippingAddressTest()[pri:2, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@313b2ea6]" started-at="2026-10-23T15:51:00 IST" name="blankShippingAddressTest" finished-at="2026-10-23T15:51:27 IST" duration-ms="26446" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Blank shipping address correctly triggered validation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- blankShippingAddressTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@313b2ea6]" started-at="2026-10-23T15:51:27 IST" name="tearDown" finished-at="2026-10-23T15:51:32 IST" duration-ms="5244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.Checkout.CheckoutTest -->
+      <class name="ecom.BITM.QADemo.SignIn.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@6a2b953e]" started-at="2026-10-23T15:50:47 IST" name="setUp" finished-at="2026-10-23T15:50:48 IST" duration-ms="969" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="blankLoginTest()[pri:3, instance:ecom.BITM.QADemo.SignIn.LoginTest@6a2b953e]" started-at="2026-10-23T15:50:48 IST" name="blankLoginTest" finished-at="2026-10-23T15:50:54 IST" duration-ms="5828" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Blank login test passed: login was rejected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- blankLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@6a2b953e]" started-at="2026-10-23T15:50:54 IST" name="tearDown" finished-at="2026-10-23T15:50:59 IST" duration-ms="5213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.SignIn.LoginTest -->
+    </test> <!-- Negative Tests - Login SignUp Checkout -->
+  </suite> <!-- Negative Test Suite -->
+  <suite started-at="2026-10-23T15:47:30 IST" name="SystemSuite" finished-at="2026-10-23T15:48:34 IST" duration-ms="63097">
+    <groups>
+      <group name="ST">
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@5f8edcc5]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="ProductTest.verifyProductIsDisplayed()[pri:1, instance:ecom.BITM.QADemo.Product.ProductTest@117e949d]" name="verifyProductIsDisplayed" class="ecom.BITM.QADemo.Product.ProductTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@10d68fcd]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@7b02881e]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+      </group> <!-- ST -->
+      <group name="YT">
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@10d68fcd]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@7b02881e]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+      </group> <!-- YT -->
+      <group name="IT">
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@5f8edcc5]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@10d68fcd]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@7b02881e]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+      </group> <!-- IT -->
+      <group name="FT">
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@5f8edcc5]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="ProductTest.verifyProductIsDisplayed()[pri:1, instance:ecom.BITM.QADemo.Product.ProductTest@117e949d]" name="verifyProductIsDisplayed" class="ecom.BITM.QADemo.Product.ProductTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@10d68fcd]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@7b02881e]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+      </group> <!-- FT -->
+    </groups>
+    <test started-at="2026-10-23T15:47:30 IST" name="SystemTesting" finished-at="2026-10-23T15:48:34 IST" duration-ms="63097">
+      <class name="ecom.BITM.QADemo.Product.ProductTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@117e949d]" started-at="2026-10-23T15:47:38 IST" name="setUp" finished-at="2026-10-23T15:47:39 IST" duration-ms="1026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProductIsDisplayed()[pri:1, instance:ecom.BITM.QADemo.Product.ProductTest@117e949d]" started-at="2026-10-23T15:47:39 IST" name="verifyProductIsDisplayed" finished-at="2026-10-23T15:47:41 IST" duration-ms="2375" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product displayed successfully: Webcam]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@117e949d]" started-at="2026-10-23T15:47:41 IST" name="tearDown" finished-at="2026-10-23T15:47:47 IST" duration-ms="5230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.Product.ProductTest -->
+      <class name="ecom.BITM.QADemo.OrderManagement.MyOrdersTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@7b02881e]" started-at="2026-10-23T15:48:20 IST" name="setUp" finished-at="2026-10-23T15:48:21 IST" duration-ms="1080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@7b02881e]" started-at="2026-10-23T15:48:21 IST" name="verifyValidOrderIsDisplayed" finished-at="2026-10-23T15:48:28 IST" duration-ms="6923" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid order is displayed: 2453]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyValidOrderIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@7b02881e]" started-at="2026-10-23T15:48:28 IST" name="tearDown" finished-at="2026-10-23T15:48:34 IST" duration-ms="5217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.OrderManagement.MyOrdersTest -->
+      <class name="ecom.BITM.QADemo.Checkout.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@5f8edcc5]" started-at="2026-10-23T15:47:47 IST" name="setUp" finished-at="2026-10-23T15:47:48 IST" duration-ms="1013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@5f8edcc5]" started-at="2026-10-23T15:47:48 IST" name="validCheckoutTest" finished-at="2026-10-23T15:48:15 IST" duration-ms="27416" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid checkout completed and order confirmation displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validCheckoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@5f8edcc5]" started-at="2026-10-23T15:48:15 IST" name="tearDown" finished-at="2026-10-23T15:48:20 IST" duration-ms="5243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.Checkout.CheckoutTest -->
+      <class name="ecom.BITM.QADemo.SignIn.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@10d68fcd]" started-at="2026-10-23T15:47:30 IST" name="setUp" finished-at="2026-10-23T15:47:31 IST" duration-ms="1019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@10d68fcd]" started-at="2026-10-23T15:47:31 IST" name="validLoginTest" finished-at="2026-10-23T15:47:33 IST" duration-ms="1313" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@10d68fcd]" started-at="2026-10-23T15:47:33 IST" name="tearDown" finished-at="2026-10-23T15:47:38 IST" duration-ms="5231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.SignIn.LoginTest -->
+    </test> <!-- SystemTesting -->
+  </suite> <!-- SystemSuite -->
+  <suite started-at="2026-10-23T15:48:34 IST" name="SmokeSuite" finished-at="2026-10-23T15:50:36 IST" duration-ms="122490">
+    <groups>
+      <group name="ST">
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+      </group> <!-- ST -->
+      <group name="NT">
+        <method signature="LoginTest.invalidLoginTest()[pri:2, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" name="invalidLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+      </group> <!-- NT -->
+      <group name="IT">
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@7a675056]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
+      </group> <!-- IT -->
+      <group name="YT">
+        <method signature="MyOrdersTest.verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" name="verifyMyOrdersPageOpens" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@7a675056]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
+        <method signature="CartTest.verifyProductRemovedFromCart()[pri:2, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@d21a74c]" name="verifyProductRemovedFromCart" class="ecom.BITM.QADemo.ShoppingCart.CartTest"/>
+        <method signature="LoginTest.invalidLoginTest()[pri:2, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" name="invalidLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+      </group> <!-- YT -->
+      <group name="FT">
+        <method signature="MyOrdersTest.verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" name="verifyMyOrdersPageOpens" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@7a675056]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
+      </group> <!-- FT -->
+    </groups>
+    <test started-at="2026-10-23T15:48:34 IST" name="SmokeTesting" finished-at="2026-10-23T15:50:36 IST" duration-ms="122490">
+      <class name="ecom.BITM.QADemo.Product.ProductTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@7a675056]" started-at="2026-10-23T15:48:53 IST" name="setUp" finished-at="2026-10-23T15:48:54 IST" duration-ms="1051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@7a675056]" started-at="2026-10-23T15:48:54 IST" name="verifyAddToCartAndOpenCart" finished-at="2026-10-23T15:49:18 IST" duration-ms="23798" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product added to cart successfully: Webcam]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCartAndOpenCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@7a675056]" started-at="2026-10-23T15:49:18 IST" name="tearDown" finished-at="2026-10-23T15:49:23 IST" duration-ms="5242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.Product.ProductTest -->
+      <class name="ecom.BITM.QADemo.ShoppingCart.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@d21a74c]" started-at="2026-10-23T15:49:23 IST" name="setUp" finished-at="2026-10-23T15:49:24 IST" duration-ms="995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProductRemovedFromCart()[pri:2, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@d21a74c]" started-at="2026-10-23T15:49:24 IST" name="verifyProductRemovedFromCart" finished-at="2026-10-23T15:50:08 IST" duration-ms="44020" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product removed from cart successfully: Webcam]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductRemovedFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@d21a74c]" started-at="2026-10-23T15:50:08 IST" name="tearDown" finished-at="2026-10-23T15:50:14 IST" duration-ms="5244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.ShoppingCart.CartTest -->
+      <class name="ecom.BITM.QADemo.OrderManagement.MyOrdersTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" started-at="2026-10-23T15:50:14 IST" name="setUp" finished-at="2026-10-23T15:50:15 IST" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" started-at="2026-10-23T15:50:15 IST" name="verifyMyOrdersPageOpens" finished-at="2026-10-23T15:50:18 IST" duration-ms="2531" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Orders page opened successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMyOrdersPageOpens -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" started-at="2026-10-23T15:50:18 IST" name="tearDown" finished-at="2026-10-23T15:50:23 IST" duration-ms="5170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" started-at="2026-10-23T15:50:23 IST" name="setUp" finished-at="2026-10-23T15:50:24 IST" duration-ms="1014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" started-at="2026-10-23T15:50:24 IST" name="verifyValidOrderIsDisplayed" finished-at="2026-10-23T15:50:31 IST" duration-ms="7060" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid order is displayed: 2453]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyValidOrderIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2898ac89]" started-at="2026-10-23T15:50:31 IST" name="tearDown" finished-at="2026-10-23T15:50:36 IST" duration-ms="5210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.OrderManagement.MyOrdersTest -->
+      <class name="ecom.BITM.QADemo.SignIn.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" started-at="2026-10-23T15:48:34 IST" name="setUp" finished-at="2026-10-23T15:48:35 IST" duration-ms="1009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" started-at="2026-10-23T15:48:35 IST" name="validLoginTest" finished-at="2026-10-23T15:48:36 IST" duration-ms="1418" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" started-at="2026-10-23T15:48:36 IST" name="tearDown" finished-at="2026-10-23T15:48:41 IST" duration-ms="5217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" started-at="2026-10-23T15:48:41 IST" name="setUp" finished-at="2026-10-23T15:48:42 IST" duration-ms="1032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginTest()[pri:2, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" started-at="2026-10-23T15:48:42 IST" name="invalidLoginTest" finished-at="2026-10-23T15:48:48 IST" duration-ms="5874" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Invalid login test passed: login was rejected]]>
             </line>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@24aed80c]" started-at="2026-10-20T20:18:43 IST" name="tearDown" finished-at="2026-10-20T20:18:48 IST" duration-ms="5266" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@15ca7889]" started-at="2026-10-23T15:48:48 IST" name="tearDown" finished-at="2026-10-23T15:48:53 IST" duration-ms="5179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- ecom.BITM.QADemo.SignIn.LoginTest -->
     </test> <!-- SmokeTesting -->
   </suite> <!-- SmokeSuite -->
+  <suite started-at="2026-10-23T15:45:08 IST" name="FunctionalSuite" finished-at="2026-10-23T15:47:30 IST" duration-ms="142004">
+    <groups>
+      <group name="ST">
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@8297b3a]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="ProductTest.verifyProductIsDisplayed()[pri:1, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" name="verifyProductIsDisplayed" class="ecom.BITM.QADemo.Product.ProductTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@6ad82709]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+      </group> <!-- ST -->
+      <group name="YT">
+        <method signature="MyOrdersTest.verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" name="verifyMyOrdersPageOpens" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@6ad82709]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
+      </group> <!-- YT -->
+      <group name="IT">
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@8297b3a]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="CartTest.verifyProductAddedToCart()[pri:1, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@7817fd62]" name="verifyProductAddedToCart" class="ecom.BITM.QADemo.ShoppingCart.CartTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@6ad82709]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
+      </group> <!-- IT -->
+      <group name="FT">
+        <method signature="CheckoutTest.validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@8297b3a]" name="validCheckoutTest" class="ecom.BITM.QADemo.Checkout.CheckoutTest"/>
+        <method signature="MyOrdersTest.verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" name="verifyMyOrdersPageOpens" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyProductIsDisplayed()[pri:1, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" name="verifyProductIsDisplayed" class="ecom.BITM.QADemo.Product.ProductTest"/>
+        <method signature="CartTest.verifyProductAddedToCart()[pri:1, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@7817fd62]" name="verifyProductAddedToCart" class="ecom.BITM.QADemo.ShoppingCart.CartTest"/>
+        <method signature="LoginTest.validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@6ad82709]" name="validLoginTest" class="ecom.BITM.QADemo.SignIn.LoginTest"/>
+        <method signature="MyOrdersTest.verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" name="verifyValidOrderIsDisplayed" class="ecom.BITM.QADemo.OrderManagement.MyOrdersTest"/>
+        <method signature="ProductTest.verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" name="verifyAddToCartAndOpenCart" class="ecom.BITM.QADemo.Product.ProductTest"/>
+      </group> <!-- FT -->
+    </groups>
+    <test started-at="2026-10-23T15:45:08 IST" name="FunctionalTesting" finished-at="2026-10-23T15:47:30 IST" duration-ms="142004">
+      <class name="ecom.BITM.QADemo.Product.ProductTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" started-at="2026-10-23T15:45:19 IST" name="setUp" finished-at="2026-10-23T15:45:21 IST" duration-ms="1398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProductIsDisplayed()[pri:1, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" started-at="2026-10-23T15:45:21 IST" name="verifyProductIsDisplayed" finished-at="2026-10-23T15:45:24 IST" duration-ms="3544" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product displayed successfully: Webcam]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" started-at="2026-10-23T15:45:24 IST" name="tearDown" finished-at="2026-10-23T15:45:30 IST" duration-ms="5233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" started-at="2026-10-23T15:45:30 IST" name="setUp" finished-at="2026-10-23T15:45:31 IST" duration-ms="1267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddToCartAndOpenCart()[pri:2, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" started-at="2026-10-23T15:45:31 IST" name="verifyAddToCartAndOpenCart" finished-at="2026-10-23T15:45:55 IST" duration-ms="24051" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product added to cart successfully: Webcam]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCartAndOpenCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Product.ProductTest@510f3d34]" started-at="2026-10-23T15:45:55 IST" name="tearDown" finished-at="2026-10-23T15:46:02 IST" duration-ms="6812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.Product.ProductTest -->
+      <class name="ecom.BITM.QADemo.ShoppingCart.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@7817fd62]" started-at="2026-10-23T15:46:02 IST" name="setUp" finished-at="2026-10-23T15:46:03 IST" duration-ms="1334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProductAddedToCart()[pri:1, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@7817fd62]" started-at="2026-10-23T15:46:03 IST" name="verifyProductAddedToCart" finished-at="2026-10-23T15:46:26 IST" duration-ms="22969" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product added to cart successfully: Webcam]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.ShoppingCart.CartTest@7817fd62]" started-at="2026-10-23T15:46:26 IST" name="tearDown" finished-at="2026-10-23T15:46:31 IST" duration-ms="5259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.ShoppingCart.CartTest -->
+      <class name="ecom.BITM.QADemo.OrderManagement.MyOrdersTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" started-at="2026-10-23T15:47:08 IST" name="setUp" finished-at="2026-10-23T15:47:09 IST" duration-ms="1336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMyOrdersPageOpens()[pri:1, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" started-at="2026-10-23T15:47:09 IST" name="verifyMyOrdersPageOpens" finished-at="2026-10-23T15:47:12 IST" duration-ms="2435" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Orders page opened successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMyOrdersPageOpens -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" started-at="2026-10-23T15:47:12 IST" name="tearDown" finished-at="2026-10-23T15:47:17 IST" duration-ms="5185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" started-at="2026-10-23T15:47:17 IST" name="setUp" finished-at="2026-10-23T15:47:18 IST" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyValidOrderIsDisplayed()[pri:2, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" started-at="2026-10-23T15:47:18 IST" name="verifyValidOrderIsDisplayed" finished-at="2026-10-23T15:47:25 IST" duration-ms="7065" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid order is displayed: 2453]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyValidOrderIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.OrderManagement.MyOrdersTest@2362f559]" started-at="2026-10-23T15:47:25 IST" name="tearDown" finished-at="2026-10-23T15:47:30 IST" duration-ms="5205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.OrderManagement.MyOrdersTest -->
+      <class name="ecom.BITM.QADemo.Checkout.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@8297b3a]" started-at="2026-10-23T15:46:31 IST" name="setUp" finished-at="2026-10-23T15:46:33 IST" duration-ms="1310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validCheckoutTest()[pri:1, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@8297b3a]" started-at="2026-10-23T15:46:33 IST" name="validCheckoutTest" finished-at="2026-10-23T15:47:01 IST" duration-ms="28289" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid checkout completed and order confirmation displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validCheckoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.Checkout.CheckoutTest@8297b3a]" started-at="2026-10-23T15:47:01 IST" name="tearDown" finished-at="2026-10-23T15:47:08 IST" duration-ms="7247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.Checkout.CheckoutTest -->
+      <class name="ecom.BITM.QADemo.SignIn.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@6ad82709]" started-at="2026-10-23T15:45:08 IST" name="setUp" finished-at="2026-10-23T15:45:12 IST" duration-ms="3610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:1, instance:ecom.BITM.QADemo.SignIn.LoginTest@6ad82709]" started-at="2026-10-23T15:45:12 IST" name="validLoginTest" finished-at="2026-10-23T15:45:14 IST" duration-ms="2087" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecom.BITM.QADemo.SignIn.LoginTest@6ad82709]" started-at="2026-10-23T15:45:14 IST" name="tearDown" finished-at="2026-10-23T15:45:19 IST" duration-ms="5226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecom.BITM.QADemo.SignIn.LoginTest -->
+    </test> <!-- FunctionalTesting -->
+  </suite> <!-- FunctionalSuite -->
 </testng-results>

@@ -6,8 +6,6 @@
 
         <classes>
 
-            
-
             <class name="ecom.BITM.QADemo.SignUp.SignUpTest">
                 <methods>
                     <include name="invalidEmailSignUpTest"/>

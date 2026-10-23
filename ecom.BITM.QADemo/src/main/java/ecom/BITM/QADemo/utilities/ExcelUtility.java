@@ -1,8 +1,6 @@
 package ecom.BITM.QADemo.utilities;
-
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -31,7 +29,7 @@ public class ExcelUtility {
 
             String value = new DataFormatter().formatCellValue(row.getCell(colNum)).trim();
 
-            // Excel me "(blank)" likha hai matlab khali input
+            
             if (value.equalsIgnoreCase("(blank)")) {
                 return "";
             }

@@ -1,10 +1,7 @@
-
 package ecom.BITM.QADemo.ShoppingCart;
-
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-
 import ecom.BITM.QADemo.baseClass.BaseClass;
 import ecom.BITM.QADemo.objRepo.CartPage;
 import ecom.BITM.QADemo.objRepo.ProductPage;
@@ -18,8 +15,7 @@ public class CartTest extends BaseClass {
 
         FlowUtility.loginAsValidUser(driver);
 
-        String product =
-                ExcelUtility.getCellData("CartData", 1, 1);
+        String product = ExcelUtility.getCellData("CartData", 1, 1);
 
         System.out.println("Product to add: " + product);
 
@@ -31,8 +27,7 @@ public class CartTest extends BaseClass {
 
         Assert.assertTrue(
                 cartPage.isProductInCart(product),
-                "Product not found in cart: " + product
-        );
+                "Product not found in cart: " + product);
 
         Reporter.log("Product added to cart successfully: " + product, true);
     }
@@ -42,8 +37,7 @@ public class CartTest extends BaseClass {
 
         FlowUtility.loginAsValidUser(driver);
 
-        String product =
-                ExcelUtility.getCellData("CartData", 2, 1);
+        String product =ExcelUtility.getCellData("CartData", 2, 1);
 
         System.out.println("Product from Excel: " + product);
 
@@ -55,8 +49,7 @@ public class CartTest extends BaseClass {
 
         Assert.assertTrue(
                 cartPage.isProductInCart(product),
-                "Product should be in cart before removal: " + product
-        );
+                "Product should be in cart before removal: " + product);
 
         System.out.println("Product found in cart: " + product);
         System.out.println("Attempting to remove product...");
@@ -67,8 +60,7 @@ public class CartTest extends BaseClass {
 
         Assert.assertTrue(
                 cartPage.isCartEmpty(),
-                "Cart should be empty after removing product: " + product
-        );
+                "Cart should be empty after removing product: " + product);
 
         Reporter.log("Product removed from cart successfully: " + product, true);
     }

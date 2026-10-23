@@ -1,16 +1,12 @@
-
 package ecom.BITM.QADemo.SignUp;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-
 import ecom.BITM.QADemo.baseClass.BaseClass;
 import ecom.BITM.QADemo.objRepo.SignUpPage;
 import ecom.BITM.QADemo.utilities.ExcelUtility;
@@ -110,33 +106,25 @@ public class SignUpTest extends BaseClass {
     private void captureScreenshot(String fileName) {
 
         try {
-            File folder = new File(
-                "C:\\Users\\ASUS\\eclipse-workspace\\ecom.BITM.QADemo\\screenshot"
-            );
+            File folder = new File("C:\\Users\\ASUS\\eclipse-workspace\\ecom.BITM.QADemo\\screenshot");
 
             if (!folder.exists()) {
                 folder.mkdirs();
             }
 
-            File source = ((TakesScreenshot) driver)
-                    .getScreenshotAs(OutputType.FILE);
+            File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
             File destination = new File(folder, fileName + ".png");
 
             Files.copy(
                 source.toPath(),
                 destination.toPath(),
-                StandardCopyOption.REPLACE_EXISTING
-            );
+                StandardCopyOption.REPLACE_EXISTING);
 
-            System.out.println(
-                "Screenshot saved: " + destination.getAbsolutePath()
-            );
+            System.out.println("Screenshot saved: " + destination.getAbsolutePath());
 
         } catch (IOException e) {
-            throw new RuntimeException(
-                "Unable to save screenshot", e
-            );
+            throw new RuntimeException("Unable to save screenshot", e);
         }
     }
 }

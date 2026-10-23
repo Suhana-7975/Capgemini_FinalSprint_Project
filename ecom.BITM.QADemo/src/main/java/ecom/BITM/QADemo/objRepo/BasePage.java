@@ -1,8 +1,5 @@
-
 package ecom.BITM.QADemo.objRepo;
-
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,15 +18,11 @@ public class BasePage {
     }
 
     protected WebElement visible(By locator) {
-        return wait.until(
-            ExpectedConditions.visibilityOfElementLocated(locator)
-        );
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     protected WebElement clickable(By locator) {
-        return wait.until(
-            ExpectedConditions.elementToBeClickable(locator)
-        );
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     protected void click(By locator) {
@@ -46,8 +39,7 @@ public class BasePage {
 
     protected boolean isPresent(By locator, int seconds) {
         try {
-            new WebDriverWait(driver, Duration.ofSeconds(seconds))
-                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+            new WebDriverWait(driver, Duration.ofSeconds(seconds)).until(ExpectedConditions.visibilityOfElementLocated(locator));
             return true;
         } catch (TimeoutException e) {
             return false;

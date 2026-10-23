@@ -1,9 +1,6 @@
-
 package ecom.BITM.QADemo.objRepo;
-
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -24,10 +21,7 @@ public class CartPage {
     }
 
     private By productName(String product) {
-        return By.xpath(
-            "//*[starts-with(@data-testid,'cart-item-name-') " +
-            "and normalize-space(.)='" + product + "']"
-        );
+        return By.xpath("//*[starts-with(@data-testid,'cart-item-name-') " +"and normalize-space(.)='" + product + "']");
     }
 
     // Locate the cart row containing the exact product.
@@ -35,36 +29,29 @@ public class CartPage {
         return By.xpath(
             "//*[starts-with(@data-testid,'cart-item-name-') " +
             "and normalize-space(.)='" + product + "']" +
-            "/ancestor::*[@role='listitem'][1]"
-        );
+            "/ancestor::*[@role='listitem'][1]");
     }
 
     // This selector is searched relative to the selected cart item.
     private By removeButton() {
         return By.cssSelector(
-            "button[data-testid^='cart-item-remove-']"
-        );
+            "button[data-testid^='cart-item-remove-']");
     }
 
     private By emptyCartHeading() {
         return By.cssSelector(
-            "[data-testid='cart-empty-heading']"
-        );
+            "[data-testid='cart-empty-heading']");
     }
 
     private By cartItems() {
         return By.cssSelector(
-            "[data-testid^='cart-item-'][role='listitem']"
-        );
+            "[data-testid^='cart-item-'][role='listitem']");
     }
 
     public boolean isProductInCart(String product) {
         try {
             wait.until(
-                ExpectedConditions.visibilityOfElementLocated(
-                    productName(product)
-                )
-            );
+                ExpectedConditions.visibilityOfElementLocated(productName(product)));
             return true;
 
         } catch (TimeoutException e) {
@@ -74,22 +61,14 @@ public class CartPage {
 
     public void removeProduct(String product) {
 
-        WebElement item = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(
-                cartItem(product)
-            )
-        );
+        WebElement item = wait.until(ExpectedConditions.visibilityOfElementLocated(cartItem(product) ));
 
         WebElement button = item.findElement(removeButton());
 
         ((JavascriptExecutor) driver).executeScript(
-            "arguments[0].scrollIntoView({block:'center'});",
-            button
-        );
+            "arguments[0].scrollIntoView({block:'center'});",button);
 
-        wait.until(
-            ExpectedConditions.elementToBeClickable(button)
-        );
+        wait.until(ExpectedConditions.elementToBeClickable(button));
 
         try {
             button.click();
@@ -97,63 +76,38 @@ public class CartPage {
         } catch (ElementClickInterceptedException e) {
             // Retry using JavaScript only if the normal click is intercepted.
             WebElement currentItem = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(
-                    cartItem(product)
-                )
-            );
+                ExpectedConditions.visibilityOfElementLocated(cartItem(product)));
 
-            WebElement currentButton =
-                currentItem.findElement(removeButton());
+            WebElement currentButton =currentItem.findElement(removeButton());
 
-            ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].click();",
-                currentButton
-            );
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();",currentButton);
         }
 
         // Wait for the selected product to disappear.
         if (!waitUntilGone(product, 6)) {
 
             // If it is still present, retry once using JavaScript.
-            List<WebElement> remaining =
-                driver.findElements(productName(product));
+            List<WebElement> remaining =driver.findElements(productName(product));
 
             if (!remaining.isEmpty()) {
-                WebElement currentItem = driver.findElement(
-                    cartItem(product)
-                );
+                WebElement currentItem = driver.findElement(cartItem(product));
 
-                WebElement currentButton =
-                    currentItem.findElement(removeButton());
+                WebElement currentButton =currentItem.findElement(removeButton());
 
-                ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].click();",
-                    currentButton
-                );
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();",currentButton);
             }
 
             ensureGone(product);
         }
 
-        System.out.println(
-            "Product removed from cart: " + product
-        );
+        System.out.println("Product removed from cart: " + product);
     }
 
     private boolean waitUntilGone(String product, int seconds) {
         try {
-            return new WebDriverWait(
-                driver, Duration.ofSeconds(seconds)
-            ).until(
-                ExpectedConditions.or(
-                    ExpectedConditions.invisibilityOfElementLocated(
-                        productName(product)
-                    ),
-                    ExpectedConditions.visibilityOfElementLocated(
-                        emptyCartHeading()
-                    )
-                )
-            );
+            return new WebDriverWait(driver, Duration.ofSeconds(seconds) ).until(
+                ExpectedConditions.or(ExpectedConditions.invisibilityOfElementLocated( productName(product)),
+                    ExpectedConditions.visibilityOfElementLocated(emptyCartHeading())));
 
         } catch (TimeoutException e) {
             return false;
@@ -162,9 +116,8 @@ public class CartPage {
 
     private void ensureGone(String product) {
         if (!waitUntilGone(product, 10)) {
-            throw new AssertionError(
-                "Remove action did not remove the product: " + product
-            );
+            throw new AssertionError( "Remove action did not remove the product: " + product
+            		);
         }
     }
 
@@ -173,11 +126,8 @@ public class CartPage {
             wait.until(
                 ExpectedConditions.or(
                     ExpectedConditions.visibilityOfElementLocated(
-                        emptyCartHeading()
-                    ),
-                    driver -> driver.findElements(cartItems()).isEmpty()
-                )
-            );
+                        emptyCartHeading()),
+                    driver -> driver.findElements(cartItems()).isEmpty()));
             return true;
 
         } catch (TimeoutException e) {
@@ -195,8 +145,6 @@ public class CartPage {
 
         wait.until(
             ExpectedConditions.elementToBeClickable(
-                checkoutButton
-            )
-        ).click();
+                checkoutButton)).click();
     }
 }

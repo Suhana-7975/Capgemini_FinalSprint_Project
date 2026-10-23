@@ -1,8 +1,5 @@
-
 package ecom.BITM.QADemo.baseClass;
-
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +13,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import ecom.BITM.QADemo.utilities.PropertyUtility;
 
 public class BaseClass {
@@ -56,16 +52,12 @@ public class BaseClass {
                 break;
 
             default:
-                throw new RuntimeException(
-                        "Unsupported browser: " + browser
-                                + ". Use chrome, firefox, or edge."
-                );
+                throw new RuntimeException("Unsupported browser: " + browser+ ". Use chrome, firefox, or edge.");
         }
 
         driver.manage().window().maximize();
 
-        driver.manage().timeouts()
-                .implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
@@ -74,15 +66,11 @@ public class BaseClass {
     }
 
     protected WebElement visible(By locator) {
-        return wait.until(
-                ExpectedConditions.visibilityOfElementLocated(locator)
-        );
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     protected WebElement clickable(By locator) {
-        return wait.until(
-                ExpectedConditions.elementToBeClickable(locator)
-        );
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     protected void click(By locator) {
@@ -100,10 +88,7 @@ public class BaseClass {
 
     protected boolean isPresent(By locator, int seconds) {
         try {
-            new WebDriverWait(driver, Duration.ofSeconds(seconds))
-                    .until(
-                            ExpectedConditions.visibilityOfElementLocated(locator)
-                    );
+            new WebDriverWait(driver, Duration.ofSeconds(seconds)).until(ExpectedConditions.visibilityOfElementLocated(locator) );
             return true;
         } catch (TimeoutException e) {
             return false;

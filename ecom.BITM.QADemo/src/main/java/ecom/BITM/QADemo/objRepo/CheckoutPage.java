@@ -1,5 +1,4 @@
 package ecom.BITM.QADemo.objRepo;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -96,37 +95,27 @@ public class CheckoutPage extends BasePage {
     public void clickPlaceOrder() {
 
         WebElement button = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        placeOrderButton));
+                ExpectedConditions.elementToBeClickable(placeOrderButton));
 
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView({block:'center'});",
-                button);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});",button);
 
         // Prefer a normal Selenium click.
         try {
             wait.until(
-                    ExpectedConditions.elementToBeClickable(
-                            placeOrderButton)).click();
+                    ExpectedConditions.elementToBeClickable( placeOrderButton)).click();
 
         } catch (ElementClickInterceptedException e) {
 
             // Use JavaScript only if the normal click is intercepted.
-            WebElement currentButton = wait.until(
-                    ExpectedConditions.presenceOfElementLocated(
-                            placeOrderButton));
+            WebElement currentButton = wait.until( ExpectedConditions.presenceOfElementLocated(placeOrderButton));
 
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].click();",
-                    currentButton);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();",currentButton);
         }
     }
 
     public boolean isOrderConfirmationDisplayed() {
         try {
-            wait.until(
-                    ExpectedConditions.visibilityOfElementLocated(
-                            orderConfirmationHeading));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(orderConfirmationHeading));
             return true;
 
         } catch (TimeoutException e) {
@@ -136,9 +125,7 @@ public class CheckoutPage extends BasePage {
 
     public boolean isValidationMessageDisplayed() {
         try {
-            wait.until(
-                    ExpectedConditions.visibilityOfElementLocated(
-                            validationMessage));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(validationMessage));
             return true;
 
         } catch (TimeoutException e) {
